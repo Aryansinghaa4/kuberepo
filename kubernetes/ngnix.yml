@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: busbox
-      image: traefik:v3.7.13-nanoserver-ltsc2025
+      image: traefik:v3.7.13-nanoserver-ltsc2022
       ports:
         - containerPort: 80
