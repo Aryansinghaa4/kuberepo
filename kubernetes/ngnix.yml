@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-pod
+  name: busbox-pod
   labels:
-    app: nginx
+    app: busbox
 spec:
   containers:
-    - name: nginx
-      image: nginx:latest
+    - name: busbox
+      image: traefik:v3.7.13-nanoserver-ltsc2025
       ports:
         - containerPort: 80
