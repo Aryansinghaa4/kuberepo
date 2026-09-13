@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: busybox-pod
+  name: website
   labels:
-    app: busybox
+    app: website
 spec:
   containers:
-    - name: busybox
-      image: traefik:v3.7.13-nanoserver-ltsc2022
+    - name: website
+      image: acrimg.azurecr.io/scheldon:v1
       ports:
         - containerPort: 80
